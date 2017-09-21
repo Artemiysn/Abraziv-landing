@@ -1,0 +1,65 @@
+.categories-content {
+    // переключение по клику
+    display: none;
+    transition: all .2s ease;
+    &.active {
+        display: block;
+    }
+    position: relative;
+    overflow: hidden;
+    &__text {
+        padding-left: 52.5%;
+        padding-right: 2.5%;
+        @media (max-width: 982px) {
+            padding-left: 32.5%;
+        }
+        h3 {
+            //font-family: 'HelveticaNeueCyr';
+            font-size: 32px;
+            line-height: 32px;
+            text-align: left;
+            text-transform: uppercase;
+            padding-bottom: 15px;
+            min-height: 80px;
+        }
+        article {
+            font-size: 16px;
+            text-align: left;
+            line-height: 19px;
+        }
+        ul {
+            list-style-image: url('../img/small-lazure-circle.png');
+            padding-left: 13px;
+            padding-top: 15px;
+            padding-bottom: 30px;
+            text-align: left;
+            font-size: 16px;
+            line-height: 20px;
+        }
+        a.btn {
+            font-size: 22px;
+            width: 300px;
+            margin-bottom: 15px;
+            padding-left: 30px;
+            padding-right: 30px;
+            @media (max-width: 1170px) {
+                max-width: 70%;
+            }
+            @media (max-width: 768px) {
+                font-size: 16px;
+            }
+        }
+    }
+    &__pic {
+        position: absolute;
+        right: 50%;
+        top: 0;
+        @media (max-width: 982px) {
+            right: 70%;
+        }
+        @media (max-width: 650px) {
+            top: auto;
+            bottom: 0;
+        }
+    }
+}

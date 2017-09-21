@@ -1,0 +1,51 @@
+.sertificates {
+    //width: 1170px;
+    width: 100%; //margin: 0 auto;
+    min-height: 530px;
+    text-align: center;
+    background-image: url('../img/sertificates-bg.png');
+    padding-bottom: 70px;
+    h2 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        font-size: 38px;
+        line-height: 38px;
+        text-transform: uppercase;
+    }
+    &-slider-wrapper {
+        width: 1170px;
+        margin: 0 auto;
+        position: relative;
+        @media (max-width: 1170px) {
+            width: 95%;
+            margin-left: 2.5%;
+            margin-right: 2.5%;
+        }
+        .left-shevron {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .right-shevron {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    &-slider {
+        &__slide {
+            img {
+                display: block;
+                margin: 0 auto;
+                width: 218px;
+                height: 314px;
+                border: 10px solid rgb(40,35,20);
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

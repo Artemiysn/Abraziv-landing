@@ -1,0 +1,8 @@
+// Глобальные стили
+@import "sass-libs/*.scss";
+
+//Стили модулей
+@import "../modules/**/*.scss"; 
+
+//Стили страницы - пока их нет
+@import "pages/*.scss";

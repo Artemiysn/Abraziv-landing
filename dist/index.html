@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Весь Абразив</title>
+    <link rel="stylesheet" href="libs/normalize.css">
+    <!-- ДЛЯ КАЖДОЙ СТРАНИЦ РАЗНЫЕ БИБЛИОТЕКИ ПОДКЛЮЧЕНЫ -->
+    <!-- Не весь бутстрап - только js плагины: карусель, поповер, тултип и коллапс -->
+    <!-- <link rel="stylesheet" href="libs/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="libs/slick.css">
+    <link rel="stylesheet" href="libs/lity.min.css">
+    <!-- <link rel="stylesheet" href="libs/animate.css"> -->
+    <!-- <link rel="stylesheet" href="libs/slick-theme.css"> -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Фолбек шрифтов  -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic-ext" rel="stylesheet">
+</head>
+<body>
+        <!-- ******  -->
+        <!-- Хедер начинается тут  -->
+        <!-- ******  -->
+        <section id="header" class="header-wrapper">
+    <section class="header">
+        <div class="header-logo">
+            <a class="page-scroll" href="#sub-header">
+                <img src="img/icon-abraziv.png" alt="logo">
+                <h1><span>ВЕСЬ</span>АБРАЗИВ</h1>
+            </a>
+        </div>
+        <div class="header-menu">
+            <ul>
+                <!-- Эти пункты меню только для основной версии сайта -->
+                <li class="hidden-sm">
+                    <a class="page-scroll active" href="#intro">
+                        <span>ГЛАВНАЯ</span>
+                    </a>
+                </li>
+                <li class="hidden-sm">
+                    <a class="page-scroll" href="#categories">
+                        <span>О ТОВАРЕ</span>
+                    </a>
+                </li>
+                <li class="hidden-sm">
+                    <a class="page-scroll" href="#advantages">
+                        <span>ОПЫТ</span>
+                    </a>
+                </li>
+                <li class="hidden-sm">
+                    <a class="page-scroll" href="#delivery">
+                        <span>ДОСТАВКА/ОПЛАТА</span>
+                    </a>
+                </li>
+                <li class="hidden-sm">
+                    <a class="page-scroll" href="#sertificates">
+                        <span>СЕРТИФИКАТЫ</span>
+                    </a>
+                </li>
+                <li class="hidden-sm">
+                    <a class="page-scroll" href="#footer">
+                        <span>КОНТАКТЫ</span>
+                    </a>
+                </li>
+                <!-- Следующие 3 пункта меню видны только на экранах меньше 768px -->
+                <li class="visible-sm-only">
+                    <a class="page-scroll" href="#footer">
+                        <!-- Контакты -->
+                        <img src="img/icon-geo-mobile-menu.png" alt="geo">
+                    </a>
+                </li>
+                <li class="visible-sm-only">
+                    <a href="javascript:void(0)">
+                        <!-- Прайс -->
+                        <img src="img/icon-price-mobile-menu.png" alt="price">
+                    </a>
+                </li>
+                <li class="visible-sm-only">
+                    <a id="js-mobile-menu-button" class="hamburger-icon-link" href="javascript:void(0)">
+                        <div class="hamburger-icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div> <!-- ./header-menu -->
+        <div id="js-mobile-menu-content" class="header-mobile-menu visible-sm-only">
+            <a class="page-scroll" href="#sub-header">ГЛАВНАЯ</a>
+            <a class="page-scroll" href="#categories">О ТОВАРЕ</a>
+            <a class="page-scroll" href="#advantages">ОПЫТ</a>
+            <a class="page-scroll" href="#delivery">ДОСТАВКА/ОПЛАТА</a>
+            <a class="page-scroll" href="#sertificates">СЕРТИФИКАТЫ</a>
+            <a class="page-scroll" href="#footer">КОНТАКТЫ</a>
+        </div>
+    </section> <!-- ./header -->
+</section>
+        <!-- ******  -->
+        <!-- Хедер заканчивается тут  -->
+        <!-- ******  -->
+        <!-- ******  -->
+        <!-- Саб-хедер начинается тут  -->
+        <!-- ******  -->
+        <section id="sub-header" class="sub-header">
+        <div class="sub-header__address-and-mail hidden-sm">
+            <img src="img/icon-geo.png" alt="geo">
+            <span>
+                Москва<br>
+                ул. Электродная, д.2, стр. 7<br>
+                <a href="javascript:void(0)">info@abraziv.ru</a>
+            </span>
+        </div>
+        <div class="sub-header__phone-rf">
+            <span class="sub-header__phone-rf-central-align">
+                <span class="sub-header__phone-rf-descr">Звонок по РФ бесплатный</span>
+                <span class="sub-header__phone-rf-phone">
+                    + 7 (800) 100-57-64
+                    <a id="js-subheader-chevron-down" class="sub-header__chevron-down visible-sm-only" href="javascript:void(0)">
+                        <span class="chevron-down"></span>    
+                    </a>
+                    <span id="js-subheader-popup-content" class="sub-header__dropdown">
+                        <span>Москва: </span>
+                        <span>+ 7 (495) 104-56-92</span>
+                    </span>
+                </span>
+                <a href="javascript:void(0)" class="sub-header__phone-rf-request-call visible-sm-only">Заказать звонок</a>
+            </span>
+        </div>
+        <div class="sub-header__phone-moscow hidden-sm">
+            <span class="sub-header__phone-moscow-central-align">
+                <span class="sub-header__phone-moscow-descr">Москва и МО</span>
+                <span class="sub-header__phone-moscow-phone">+ 7 (495) 104-56-92</span>
+                <a href="javascript:void(0)" class="sub-header__phone-moscow-request-call">Заказать звонок</a>
+            </span>
+        </div>
+        <div class="sub-header__load-price hidden-sm">
+            <a href="javascript:void(0)" class="btn btn_dark-blue">
+                <img src="img/icon-price.png" alt="price">
+                <span>Прайс-лист</span>
+            </a>
+        </div>
+    </section>
+        <!-- ******  -->
+        <!-- Саб-хедер заканчивается тут  -->
+        <!-- ******  -->
+        <!-- ******  -->
+        <!-- Интро начинается тут  -->
+        <!-- ******  -->
+        <section id="intro" class="intro">
+    <div class="intro__text js-os-animation" data-os-animation="fadeInRight" data-os-animation-delay="0s">
+        <h2>Оптовые поставки абразивного инструмента</h2>
+        <span>ПРЕДЛАГАЕМ ПРОДАЖУ АБРАЗИВНОГО ИНСТРУМЕНТА С ДОСТАВКОЙ ПО РОССИИ И В СТРАНЫ СНГ ОТ 3-Х ДНЕЙ</span>
+        <a class="btn btn_lazure-blue attention-animation" href="javascript:void(0)">Подать заявку</a>
+    </div>
+    <div class="intro__pic js-os-animation" data-os-animation="fadeInLeft" data-os-animation-delay="0.1s">
+        <img src="img/banner-circles.png" alt="circles">
+    </div>
+</section>
+        <!-- ******  -->
+        <!-- Интро заканчивается тут  -->
+        <!-- ******  -->
+        <!-- ******  -->
+        <!-- Категории начинаются тут  -->
+        <!-- ******  -->
+        <section id="categories" class="categories">
+    <img class="categories-bg-img" src="img/categories-bg.png" alt="bg">
+    <div class="categories-wrapper js-os-animation" data-os-animation="fadeIn" data-os-animation-delay="0s">
+        <h2>ВЫБЕРИТЕ НУЖНУЮ КАТЕГОРИЮ</h2>
+        <div class="categories-menu">
+            <a class="js-category-selector" href="javascript:void(0)" data-category="1">
+                КРУГИ ОТРЕЗНЫЕ/ ЗАЧИСТНЫЕ 
+            </a>
+            <a class="js-category-selector" href="javascript:void(0)" data-category="2">
+                КРУГИ ШЛИФОВАЛЬНЫЕ
+            </a>
+            <a class="js-category-selector" href="javascript:void(0)" data-category="3">
+                СЕГМЕНТЫ И БРУСКИ
+            </a>
+            <a class="js-category-selector" href="javascript:void(0)" data-category="4">
+                КРУГИ ЛЕПЕСТКОВЫЕ
+            </a>
+            <a class="js-category-selector active" href="javascript:void(0)" data-category="5">
+                ШКУРКА ШЛИФОВАЛЬНАЯ
+            </a>
+            <a class="js-category-selector" href="javascript:void(0)" data-category="6">
+                ЛЕНТЫ ШЛИФОВАЛЬНЫЕ БЕСКОНЕЧНЫЕ
+            </a>
+            <a class="js-category-selector" href="javascript:void(0)" data-category="7">
+                КРУГИ САМОЦЕПЛЯЮЩИЕСЯ НА ЛИПУЧКЕ
+            </a>
+            <a class="js-category-selector" href="javascript:void(0)" data-category="8">
+                ОГНЕУПОРНЫЕ ИЗДЕЛИЯ
+            </a>
+        </div>
+        <!-- ***Категория 1 начинается тут***-->
+<div class="js-category-content categories-content " data-category="1">
+    <div class="categories-content__text js-os-animation" data-os-animation="fadeInRight" data-os-animation-delay="0s">
+        <h3>Круги отрезные/зачистыне</h3>
+        <article>
+            Шлифовальная шкурка или наждачная бумага – это бумажная или тканевая основа, покрытая слоем абразивного материала. Основное
+            предназначение шлифовальной шкурки заключается в ручной или автоматической обработке различных материалов для
+            достижения желаемых свойств поверхности.
+            <br> Шлифовальные шкурки можно классифицировать следующим образом:
+        </article>
+        <ul>
+            <li>По виду абразива. Встречаются стеклянные, кварцитовые, кремниевые, наждачные или корундовые,</li>
+            <li>По составу клея. Шкурки бывают водостойкие и неводостойкие,</li>
+            <li>По материалу основы. Производятся, в основном, на полотняной и бумажной основе,</li>
+            <li>По типоразмеру (номеру). Номер указывается в зависимости от средней величины абразивного зерна</li>
+        </ul>
+        <a class="btn btn_lazure-blue attention-animation" href="javascript:void(0)">Получить консультацию</a>
+    </div>
+    <img class="categories-content__pic js-os-animation" data-os-animation="fadeInLeft" data-os-animation-delay="0s" src="img/shkurka.png" alt="shkurka">
+</div>
+<!-- ***Категория 1 заканчивается тут*** --><!-- ***Категория 2 начинается тут***-->
+<div class="js-category-content categories-content " data-category="2">
+    <div class="categories-content__text js-os-animation" data-os-animation="fadeInRight" data-os-animation-delay="0s">
+        <h3>Круги шлифовальные</h3>
+        <article>
+            Шлифовальная шкурка или наждачная бумага – это бумажная или тканевая основа, покрытая слоем абразивного материала. Основное
+            предназначение шлифовальной шкурки заключается в ручной или автоматической обработке различных материалов для
+            достижения желаемых свойств поверхности.
+            <br> Шлифовальные шкурки можно классифицировать следующим образом:
+        </article>
+        <ul>
+            <li>По виду абразива. Встречаются стеклянные, кварцитовые, кремниевые, наждачные или корундовые,</li>
+            <li>По составу клея. Шкурки бывают водостойкие и неводостойкие,</li>
+            <li>По материалу основы. Производятся, в основном, на полотняной и бумажной основе,</li>
+            <li>По типоразмеру (номеру). Номер указывается в зависимости от средней величины абразивного зерна</li>
+        </ul>
+        <a class="btn btn_lazure-blue attention-animation" href="javascript:void(0)">Получить консультацию</a>
+    </div>
+    <img class="categories-content__pic js-os-animation" data-os-animation="fadeInLeft" data-os-animation-delay="0s" src="img/shkurka.png" alt="shkurka">
+</div>
+<!-- ***Категория 2 заканчивается тут*** --><!-- ***Категория 3 начинается тут***-->
+<div class="js-category-content categories-content " data-category="3">
+    <div class="categories-content__text js-os-animation" data-os-animation="fadeInRight" data-os-animation-delay="0s">
+        <h3>Сегменты и бруски</h3>
+        <article>
+            Шлифовальная шкурка или наждачная бумага – это бумажная или тканевая основа, покрытая слоем абразивного материала. Основное
+            предназначение шлифовальной шкурки заключается в ручной или автоматической обработке различных материалов для
+            достижения желаемых свойств поверхности.
+            <br> Шлифовальные шкурки можно классифицировать следующим образом:
+        </article>
+        <ul>
+            <li>По виду абразива. Встречаются стеклянные, кварцитовые, кремниевые, наждачные или корундовые,</li>
+            <li>По составу клея. Шкурки бывают водостойкие и неводостойкие,</li>
+            <li>По материалу основы. Производятся, в основном, на полотняной и бумажной основе,</li>
+            <li>По типоразмеру (номеру). Номер указывается в зависимости от средней величины абразивного зерна</li>
+        </ul>
+        <a class="btn btn_lazure-blue attention-animation" href="javascript:void(0)">Получить консультацию</a>
+    </div>
+    <img class="categories-content__pic js-os-animation" data-os-animation="fadeInLeft" data-os-animation-delay="0s" src="img/shkurka.png" alt="shkurka">
+</div>
+<!-- ***Категория 3 заканчивается тут*** --><!-- ***Категория 4 начинается тут***-->
+<div class="js-category-content categories-content " data-category="4">
+    <div class="categories-content__text js-os-animation" data-os-animation="fadeInRight" data-os-animation-delay="0s">
+        <h3>Круги лепестковые</h3>
+        <article>
+            Шлифовальная шкурка или наждачная бумага – это бумажная или тканевая основа, покрытая слоем абразивного материала. Основное
+            предназначение шлифовальной шкурки заключается в ручной или автоматической обработке различных материалов для
+            достижения желаемых свойств поверхности.
+            <br> Шлифовальные шкурки можно классифицировать следующим образом:
+        </article>
+        <ul>
+            <li>По виду абразива. Встречаются стеклянные, кварцитовые, кремниевые, наждачные или корундовые,</li>
+            <li>По составу клея. Шкурки бывают водостойкие и неводостойкие,</li>
+            <li>По материалу основы. Производятся, в основном, на полотняной и бумажной основе,</li>
+            <li>По типоразмеру (номеру). Номер указывается в зависимости от средней величины абразивного зерна</li>
+        </ul>
+        <a class="btn btn_lazure-blue attention-animation" href="javascript:void(0)">Получить консультацию</a>
+    </div>
+    <img class="categories-content__pic js-os-animation" data-os-animation="fadeInLeft" data-os-animation-delay="0s" src="img/shkurka.png" alt="shkurka">
+</div>
+<!-- ***Категория 4 заканчивается тут*** --><!-- ***Категория 5 начинается тут***-->
+<div class="js-category-content categories-content active" data-category="5">
+    <div class="categories-content__text js-os-animation" data-os-animation="fadeInRight" data-os-animation-delay="0s">
+        <h3>Шкурка шлифовальная</h3>
+        <article>
+            Шлифовальная шкурка или наждачная бумага – это бумажная или тканевая основа, покрытая слоем абразивного материала. Основное
+            предназначение шлифовальной шкурки заключается в ручной или автоматической обработке различных материалов для
+            достижения желаемых свойств поверхности.
+            <br> Шлифовальные шкурки можно классифицировать следующим образом:
+        </article>
+        <ul>
+            <li>По виду абразива. Встречаются стеклянные, кварцитовые, кремниевые, наждачные или корундовые,</li>
+            <li>По составу клея. Шкурки бывают водостойкие и неводостойкие,</li>
+            <li>По материалу основы. Производятся, в основном, на полотняной и бумажной основе,</li>
+            <li>По типоразмеру (номеру). Номер указывается в зависимости от средней величины абразивного зерна</li>
+        </ul>
+        <a class="btn btn_lazure-blue attention-animation" href="javascript:void(0)">Получить консультацию</a>
+    </div>
+    <img class="categories-content__pic js-os-animation" data-os-animation="fadeInLeft" data-os-animation-delay="0s" src="img/shkurka.png" alt="shkurka">
+</div>
+<!-- ***Категория 5 заканчивается тут*** --><!-- ***Категория 6 начинается тут***-->
+<div class="js-category-content categories-content " data-category="6">
+    <div class="categories-content__text js-os-animation" data-os-animation="fadeInRight" data-os-animation-delay="0s">
+        <h3>Ленты шлифовальные бесконечные</h3>
+        <article>
+            Шлифовальная шкурка или наждачная бумага – это бумажная или тканевая основа, покрытая слоем абразивного материала. Основное
+            предназначение шлифовальной шкурки заключается в ручной или автоматической обработке различных материалов для
+            достижения желаемых свойств поверхности.
+            <br> Шлифовальные шкурки можно классифицировать следующим образом:
+        </article>
+        <ul>
+            <li>По виду абразива. Встречаются стеклянные, кварцитовые, кремниевые, наждачные или корундовые,</li>
+            <li>По составу клея. Шкурки бывают водостойкие и неводостойкие,</li>
+            <li>По материалу основы. Производятся, в основном, на полотняной и бумажной основе,</li>
+            <li>По типоразмеру (номеру). Номер указывается в зависимости от средней величины абразивного зерна</li>
+        </ul>
+        <a class="btn btn_lazure-blue attention-animation" href="javascript:void(0)">Получить консультацию</a>
+    </div>
+    <img class="categories-content__pic js-os-animation" data-os-animation="fadeInLeft" data-os-animation-delay="0s" src="img/shkurka.png" alt="shkurka">
+</div>
+<!-- ***Категория 6 заканчивается тут*** --><!-- ***Категория 7 начинается тут***-->
+<div class="js-category-content categories-content " data-category="7">
+    <div class="categories-content__text js-os-animation" data-os-animation="fadeInRight" data-os-animation-delay="0s">
+        <h3>Круги самоцепляющиеся на липучке</h3>
+        <article>
+            Шлифовальная шкурка или наждачная бумага – это бумажная или тканевая основа, покрытая слоем абразивного материала. Основное
+            предназначение шлифовальной шкурки заключается в ручной или автоматической обработке различных материалов для
+            достижения желаемых свойств поверхности.
+            <br> Шлифовальные шкурки можно классифицировать следующим образом:
+        </article>
+        <ul>
+            <li>По виду абразива. Встречаются стеклянные, кварцитовые, кремниевые, наждачные или корундовые,</li>
+            <li>По составу клея. Шкурки бывают водостойкие и неводостойкие,</li>
+            <li>По материалу основы. Производятся, в основном, на полотняной и бумажной основе,</li>
+            <li>По типоразмеру (номеру). Номер указывается в зависимости от средней величины абразивного зерна</li>
+        </ul>
+        <a class="btn btn_lazure-blue attention-animation" href="javascript:void(0)">Получить консультацию</a>
+    </div>
+    <img class="categories-content__pic js-os-animation" data-os-animation="fadeInLeft" data-os-animation-delay="0s" src="img/shkurka.png" alt="shkurka">
+</div>
+<!-- ***Категория 7 заканчивается тут*** --><!-- ***Категория 8 начинается тут***-->
+<div class="js-category-content categories-content " data-category="8">
+    <div class="categories-content__text js-os-animation" data-os-animation="fadeInRight" data-os-animation-delay="0s">
+        <h3>Огнеупорные изделия</h3>
+        <article>
+            Шлифовальная шкурка или наждачная бумага – это бумажная или тканевая основа, покрытая слоем абразивного материала. Основное
+            предназначение шлифовальной шкурки заключается в ручной или автоматической обработке различных материалов для
+            достижения желаемых свойств поверхности.
+            <br> Шлифовальные шкурки можно классифицировать следующим образом:
+        </article>
+        <ul>
+            <li>По виду абразива. Встречаются стеклянные, кварцитовые, кремниевые, наждачные или корундовые,</li>
+            <li>По составу клея. Шкурки бывают водостойкие и неводостойкие,</li>
+            <li>По материалу основы. Производятся, в основном, на полотняной и бумажной основе,</li>
+            <li>По типоразмеру (номеру). Номер указывается в зависимости от средней величины абразивного зерна</li>
+        </ul>
+        <a class="btn btn_lazure-blue attention-animation" href="javascript:void(0)">Получить консультацию</a>
+    </div>
+    <img class="categories-content__pic js-os-animation" data-os-animation="fadeInLeft" data-os-animation-delay="0s" src="img/shkurka.png" alt="shkurka">
+</div>
+<!-- ***Категория 8 заканчивается тут*** -->
+    </div>
+</section>
+        <!-- ******  -->
+        <!-- Категории заканчиваются тут  -->
+        <!-- ******  -->
+        <!-- ******  -->
+        <!-- Преимущества начинаются тут  -->
+        <!-- ******  -->
+        <section id="advantages" class="advantages">
+    <h2 class="js-os-animation" data-os-animation="fadeInDown" data-os-animation-delay="0s" >ПОЧЕМУ ИМЕННО <span>ВЕСЬ</span>АБРАЗИВ?</h2>
+    <div class="advantages__one js-os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.3s">
+        <img src="img/advantages-icons/icon-time.png" alt="time">
+        <h3>ЧЁТКОЕ СОБЛЮДЕНИЕ СРОКОВ ОТГРУЗКИ</h3>
+        <span>Выставление счета в день заказа. Четкое соблюдение сроков отгрузки.</span>
+    </div>
+    <div class="advantages__two js-os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.4s">
+        <img src="img/advantages-icons/icon-saw.png" alt="assortiment">
+        <h3>ШИРОКИЙ АССОРТИМЕНТ АБРАЗИВА</h3>
+        <span>Множество видов образива, под любые цели.</span>
+    </div>
+    <div class="advantages__three js-os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.5s">
+        <img src="img/advantages-icons/icon-discount.png" alt="discount">
+        <h3>ГИБКАЯ СИСТЕМА СКИДОК</h3>
+        <span>Подпишитесь на акции на сайте и узнавайте первым об акциях и специальных предложениях.</span>
+    </div>
+    <div class="advantages__four js-os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.6s">
+        <img src="img/advantages-icons/icon-shield.png" alt="worktime">
+        <h3>РАБОТАЕМ НА РЫНКЕ С 2002 ГОДА</h3>
+        <span>Наша компания занимается продажей абразива с 2002 года</span>
+    </div>
+</section>
+        <!-- ******  -->
+        <!-- Преимущества заканчиваются тут  -->
+        <!-- ******  -->
+        <!-- ******  -->
+        <!-- Детали начинаются тут  -->
+        <!-- ******  -->
+        <section class="details">
+    <img src="img/details-bg.png" alt="bg">
+    <div class="details-wrapper">
+        <div class="details-header-line js-os-animation" data-os-animation="fadeIn" data-os-animation-delay="0s">
+            <h2 class="details-header-line__logo">
+                <img src="img/icon-abraziv.png" alt="abraziv">
+                <span class="lazure">ВЕСЬ</span>
+                <span>АБРАЗИВ</span>
+            </h2>
+            <h3>
+                Мы гарантируем нашим клиентам качество каждого абразива
+            </h3>
+        </div>
+        <div class="details-container">
+            <div class="left-shevron white visible-md-only"><a id="js-details-slider-prev" href="javascript:void(0)"></a></div>
+            <div class="right-shevron white visible-md-only"><a id="js-details-slider-next" href="javascript:void(0)"></a></div>
+            <div id="js-details-slider-md" class="details-slider-wrapper">
+                <div class="detail one js-os-animation-lg-only" data-os-animation="fadeIn" data-os-animation-delay="0s">
+                    <img src="img/icon-abraziv-blue.png" alt="abraziv">
+                    <h3>Оптимальная твёрдость</h3>
+                    <article>
+                        В нашем ассортименте имеются круги разной степени твердости. Круги высокой твердости применяются когда требуется выдерживать
+                        высокую точность формы, размеров
+                    </article>
+                </div>
+                <div class="detail two js-os-animation-lg-only" data-os-animation="fadeIn" data-os-animation-delay="0.2s">
+                    <img src="img/icon-abraziv-blue.png" alt="abraziv">
+                    <h3>Алмазная точность</h3>
+                    <article>
+                        Выбор зернистости круга должен обуславливаться целым рядом факторов - видом обрабатываемого материала, требуемой шероховатостью
+                        поверхности, величиной снимаемого припуска и пр.
+                    </article>
+                </div>
+                <div class="detail three js-os-animation-lg-only" data-os-animation="fadeIn" data-os-animation-delay="0.4s">
+                    <img src="img/icon-abraziv-blue.png" alt="abraziv">
+                    <h3>Алмазная точность</h3>
+                    <article>
+                        Выбор зернистости круга должен обуславливаться целым рядом факторов -
+                    </article>
+                </div>
+            </div>
+            <!-- Мелкий круг -->
+            <img class="details-circle-zoom-img js-os-animation" src="img/details-circle.png" alt="circle-zoom" data-os-animation="fadeInLeft" data-os-animation-delay="0.4s">
+            <!-- Большие круги -->
+            <img class="details-circles-img js-os-animation" src="img/details-circles.png" alt="circles" data-os-animation="fadeInRight" data-os-animation-delay="0s">
+            <!-- гост -->
+            <img class="details-gost hidden-md js-os-animation" src="img/details-GOST.png" alt="gost" data-os-animation="fadeIn" data-os-animation-delay="0s">
+        </div> <!-- ./details-container -->
+    </div>
+</section>
+        <!-- ******  -->
+        <!-- Детали заканчиваются тут  -->
+        <!-- ******  -->
+        <!-- ******  -->
+        <!-- Форма с заказом начинается тут  -->
+        <!-- ******  -->
+        <section class="form-price js-os-animation" data-os-animation="fadeIn" data-os-animation-delay="0s">
+    <img src="img/form-bg.png" alt="bg">
+    <div class="form-price-wrapper">
+        <h2>ПОЛУЧИТЕ ПРАЙС ПРЯМО СЕЙЧАС</h2>
+        <h4>ВСЯ ПРОДУКЦИЯ СЕРТИФИЦИРОВАНА И СООТВЕТСТВУЕТ ТРЕБОВАНИЯМ РОССИЙСКИХ СТАНДАРТОВ</h4>
+        <form>
+            <div class="form-price-inputs">
+                <!-- Добавить маску -->
+                <div class="form-price-inputs__phone">
+                    <input id="js-user-phone"type="text" name="js-user-input" placeholder="Введите Ваш телефон">
+                </div>
+                <div class="form-price-inputs__email">
+                    <input id="js-user-email" type="email" name="js-user-input" placeholder="Введите Вашу почту">
+                </div>
+                <div class="form-price-inputs__submit">
+                    <a id="js-user-phone-email-submit" href="javascript:void(0)" class="btn btn_lazure-blue attention-animation">
+                        Подать заявку
+                    </a>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+        <!-- ******  -->
+        <!-- Форма с заказом заканчивается тут  -->
+        <!-- ******  -->
+        <!-- ******  -->
+        <!-- Доставка начинается тут  -->
+        <!-- ******  -->
+        <section id="delivery" class="delivery">
+    <div class="delivery__pic hidden-sm js-os-animation" data-os-animation="fadeInLeft" data-os-animation-delay="0s">
+        <img src="img/truck.png" alt="truck">
+    </div>
+    <div class="delivery__text js-os-animation" data-os-animation="fadeInRight" data-os-animation-delay="0s">
+        <h2>ОПЕРАТИВНАЯ ДОСТАВКА</h2>
+        <p>Мы осуществляем бесплатную доставку продукции до терминалов московских транспортных компаний. Мы работаем с такими
+            крупными транспортными компаниями как:
+        </p>
+        <div class="delivery__brands-container">
+            <img src="img/brands/delovie-linii.png" alt="brand">
+            <img src="img/brands/baikal-service.png" alt="brand">
+            <img src="img/brands/pony-express.png" alt="brand">
+            <img src="img/brands/dhl.png" alt="brand">
+        </div>
+        <p>
+            Территория доставки нашего инструмента - от Калининграда до Владивостока, от Мурманска до Астрахани, в любую точку России,
+            где есть транспортное сообщение.
+        </p>
+    </div>
+</section>
+        <!-- ******  -->
+        <!-- Доставка заканчивается тут  -->
+        <!-- ******  -->
+        <!-- ******  -->
+        <!-- Слайдер с сертификатами начинается тут  -->
+        <!-- ******  -->
+        <section id="sertificates" class="sertificates js-os-animation" data-os-animation="fadeIn" data-os-animation-delay="0s">
+    <h2>НАШИ СЕРТИФИКАТЫ</h2>
+    <div class="sertificates-slider-wrapper">
+        <div id="js-sertificates-slider" class="sertificates-slider">
+            <div class="sertificates-slider__slide">
+                <img src="img/sertificates/sertificate-1.png" data-lity alt="sertificate" title="Посмотреть">            
+            </div>
+            <div class="sertificates-slider__slide">
+                <img src="img/sertificates/sertificate-2.png" data-lity alt="sertificate" title="Посмотреть">
+            </div>
+            <div class="sertificates-slider__slide">
+                <img src="img/sertificates/sertificate-3.png" data-lity alt="sertificate" title="Посмотреть">
+            </div>
+            <div class="sertificates-slider__slide">
+                <img src="img/sertificates/sertificate-1.png" data-lity alt="sertificate" title="Посмотреть">
+            </div>
+        </div>
+        <div class="left-shevron"><a id="js-sertificates-slider-prev" href="javascript:void(0)"></a></div>
+        <div class="right-shevron"><a id="js-sertificates-slider-next"  href="javascript:void(0)"></a></div>
+    </div>
+</section>
+        <!-- ******  -->
+        <!-- Слайдер с сертификатами заканчивается тут  -->
+        <!-- ******  -->
+        <!-- ******  -->
+        <!-- Футер начинается тут  -->
+        <!-- ******  -->
+        <section id="footer" class="footer">
+    <img class="visible-1100-plus" src="img/map.png" alt="map">
+    <img class="visible-1100-minus" src="img/map-smaller-screens.png" alt="map">
+    <div class="address-card js-os-animation" data-os-animation="fadeIn" data-os-animation-delay="0s">
+        <h2 class="address-card__logo">
+            <img src="img/icon-abraziv.png" alt="abraziv">
+            <span>ВЕСЬ</span>АБРАЗИВ
+        </h2>
+        <h3 class="address-card__contacts">Контакты</h3>
+        <div class="address-card__address">
+            <a href="https://yandex.ru/maps/-/CBUORBrNwD" target="_blank" title="Посмотреть на Яндекс картах">
+            <img src="img/icons-contacts/icon-geo-blue.png" alt="geo">
+                <span>
+                    Адрес:<br>
+                    Москва,Электродная ул., д 2, стр.7<br>
+                    (самовывоз с 9:00 до 17:50)<br>
+                </span>
+            </a>
+        </div>
+        <div class="address-card__email">
+            <img src="img/icons-contacts/icon-email-blue.png" alt="mail">
+            <span>
+                E-mail: <a href="javascript:void(0)">info@abraziv.ru</a>
+            </span>
+        </div>
+        <div class="address-card__phone">
+            <img src="img/icons-contacts/icon-phone-blue.png" alt="phone">
+            <div>
+               <span>Звонок по РФ бесплатный</span>
+               <h4>+7 (800) 100-57-64</h4>
+               <span>Москва и МО</span>
+               <h4>+7 (495) 104-56-92</h4>
+            </div>
+        </div>
+        <a href="javascript:void(0)" class="btn btn_ghost">
+            Подписаться на рассылку
+        </a>
+    </div>
+</section>
+        <!-- ******  -->
+        <!-- Футер заканчивается тут  -->
+        <!-- ******  -->
+<!-- 2.2.4  -->
+<script src="libs/jquery.min.js"></script>
+<script src="libs/jquery.easing.min.js"></script>
+<script src="libs/slick.min.js"></script>
+<script src="libs/lity.min.js"></script>
+<script src="libs/jquery.waypoints.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
